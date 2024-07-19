@@ -1,0 +1,116 @@
+<!doctype html><html class="" lang=""><head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.14">
+    <!-- End of generator meta tag -->
+    <script src="js/jquery.js"></script>
+    
+    
+    <script src="js/front-end.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/front-end.css">
+
+    
+    <script class="silex-script"></script>
+    
+    <title> - Rock</title>
+    
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+
+<body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-rock">
+    
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="editable-style image-element silex-id-1721397445783-10 page-rock paged-element paged-element-visible"><img src="assets/image1.png"></div><div class="editable-style text-element silex-id-1721398292650-16 silex-component-hamburger prevent-resizable prevent-auto-z-index page-rock paged-element page-boat page-home paged-element-visible"><div class="silex-element-content normal">
+<!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
+<div class="hamburger-menu_1721398228357_553 closed">
+    <div class="hamburger-btn ">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-container">
+      <div class="prevent-scale">
+        <nav class="">
+            <ul>
+            
+                <li><a href="./" title="Homee" class="">Home</a></li>
+            
+                <li><a href="boat.html" title="Canoe">Kayak</a></li>
+            
+                <li><a href="rock.html" title="Wok" class="page-link-active">Rock</a></li>
+            
+            </ul>
+        </nav>
+      </div>
+  </div>
+</div>
+<script>
+(function() {
+  var isOpen = false;
+  function close() {
+    isOpen = false;
+    document.querySelector('.hamburger-menu_1721398228357_553').classList.remove('open');
+    document.querySelector('.hamburger-menu_1721398228357_553').classList.add('closed');
+  }
+  function open() {
+    isOpen = true;
+    document.querySelector('.hamburger-menu_1721398228357_553').classList.add('open');
+    document.querySelector('.hamburger-menu_1721398228357_553').classList.remove('closed');
+  }
+  function toggle() {
+    if(isOpen) close();
+    else open();
+  }
+  function scrollOrResize() {
+    close();
+    move();
+  }
+  var silexElement = document.querySelector('.hamburger-menu_1721398228357_553').closest('.editable-style');
+  function move() {
+    var data = window.silex
+    var rect = silexElement.getBoundingClientRect();
+    var offset = {
+      top: rect.top + data.scrollTop,
+      left: rect.left + data.scrollLeft,
+    };
+    var container = document.querySelector('.hamburger-menu_1721398228357_553 .nav-container');
+    container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
+  }
+  document.querySelector('.hamburger-menu_1721398228357_553 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.addEventListener('resize', scrollOrResize);
+  document.addEventListener('scroll', scrollOrResize);
+  scrollOrResize()
+  setTimeout(() => scrollOrResize(), 0)
+})();
+</script>
+</div></div></body></html>
