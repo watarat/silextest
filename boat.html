@@ -52,7 +52,7 @@
 
 <div class="editable-style text-element silex-id-1721396365995-4 page-boat paged-element paged-element-visible"><div class="silex-element-content normal"><h2>Boat Page<br></h2></div></div><div class="editable-style image-element silex-id-1721397480163-11 page-boat paged-element paged-element-visible"><img src="assets/image1.png"></div><div class="editable-style image-element silex-id-1721397860298-14 page-boat paged-element paged-element-visible"><img src="assets/P1000773_trim.jpg"></div><div class="editable-style text-element silex-id-1721398284459-15 page-boat paged-element silex-component-hamburger prevent-resizable prevent-auto-z-index paged-element-visible"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1721398228357_553 closed">
+<div class="hamburger-menu_1721398776634_386 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -63,11 +63,11 @@
         <nav class="">
             <ul>
             
-                <li><a href="./" title="Homee" class="">Home</a></li>
+                <li><a href="./" title="Homee">Home</a></li>
             
                 <li><a href="boat.html" title="Canoe" class="page-link-active">Kayak</a></li>
             
-                <li><a href="rock.html" title="Wok" class="">Rock</a></li>
+                <li><a href="rock.html" title="Wok">Rock</a></li>
             
             </ul>
         </nav>
@@ -79,13 +79,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1721398228357_553').classList.remove('open');
-    document.querySelector('.hamburger-menu_1721398228357_553').classList.add('closed');
+    document.querySelector('.hamburger-menu_1721398776634_386').classList.remove('open');
+    document.querySelector('.hamburger-menu_1721398776634_386').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1721398228357_553').classList.add('open');
-    document.querySelector('.hamburger-menu_1721398228357_553').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1721398776634_386').classList.add('open');
+    document.querySelector('.hamburger-menu_1721398776634_386').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -95,7 +95,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1721398228357_553').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1721398776634_386').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -103,10 +103,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1721398228357_553 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1721398776634_386 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1721398228357_553 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1721398776634_386 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -115,7 +115,7 @@
 </script>
 </div></div><div class="editable-style text-element silex-id-1721398292650-16 silex-component-hamburger prevent-resizable prevent-auto-z-index page-rock paged-element page-boat page-home paged-element-visible"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1721398228357_553 closed">
+<div class="hamburger-menu_1721398776635_805 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -126,11 +126,11 @@
         <nav class="">
             <ul>
             
-                <li><a href="./" title="Homee" class="">Home</a></li>
+                <li><a href="./" title="Homee">Home</a></li>
             
                 <li><a href="boat.html" title="Canoe" class="page-link-active">Kayak</a></li>
             
-                <li><a href="rock.html" title="Wok" class="">Rock</a></li>
+                <li><a href="rock.html" title="Wok">Rock</a></li>
             
             </ul>
         </nav>
@@ -142,13 +142,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1721398228357_553').classList.remove('open');
-    document.querySelector('.hamburger-menu_1721398228357_553').classList.add('closed');
+    document.querySelector('.hamburger-menu_1721398776635_805').classList.remove('open');
+    document.querySelector('.hamburger-menu_1721398776635_805').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1721398228357_553').classList.add('open');
-    document.querySelector('.hamburger-menu_1721398228357_553').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1721398776635_805').classList.add('open');
+    document.querySelector('.hamburger-menu_1721398776635_805').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -158,7 +158,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1721398228357_553').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1721398776635_805').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -166,10 +166,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1721398228357_553 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1721398776635_805 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1721398228357_553 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1721398776635_805 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
